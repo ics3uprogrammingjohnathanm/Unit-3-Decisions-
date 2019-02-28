@@ -38,39 +38,57 @@ namespace GuessingGameJohnathanM
             if (ballLocation == 1)
             {
                 picBall.Location = new Point(25, 157);
-                if (cup3IsHidden || cup2IsHidden == false)
+                if (cup3IsHidden == false & cup2IsHidden == false)
                 {
                     picCup1.Hide();
+                    cup1IsHidden = true;
+                    lblGuessed.Show();
+                    lblGuessed.Text = "You Win!";
+                    lblGuessed.Location = new Point(220, 80);
                 }
                 else
                 {
                     lblGuessed.Show();
+                    lblGuessed.Text = "You Already Guessed!";
+                    lblGuessed.Location = new Point(130, 185);
                 }
 
             }
             else if (ballLocation == 2)
             {
                 picBall.Location = new Point(267, 157);
-                if (cup3IsHidden || cup2IsHidden == false)
+                if (cup3IsHidden == false & cup2IsHidden == false)
                 {
                     picCup1.Hide();
+                    cup1IsHidden = true;
+                    lblGuessed.Show();
+                    lblGuessed.Text = "You Lose!";
+                    lblGuessed.Location = new Point(220, 80);
                 }
                 else
                 {
                     lblGuessed.Show();
+                    lblGuessed.Text = "You Already Guessed!";
+                    lblGuessed.Location = new Point(130, 185);
                 }
 
             }
             else if (ballLocation == 3)
             {
                 picBall.Location = new Point(505, 157);
-                if (cup3IsHidden || cup2IsHidden == false)
+                if (cup3IsHidden == false & cup2IsHidden == false)
                 {
                     picCup1.Hide();
+                    cup1IsHidden = true;
+                    lblGuessed.Show();
+                    lblGuessed.Text = "You Lose!";
+                    lblGuessed.Location = new Point(220, 80);
                 }
                 else
                 {
                     lblGuessed.Show();
+                    lblGuessed.Text = "You Already Guessed!";
+                    lblGuessed.Location = new Point(130, 185);
                 }
             }
             
@@ -82,39 +100,57 @@ namespace GuessingGameJohnathanM
             if (ballLocation == 1)
             {
                 picBall.Location = new Point(25, 157);
-                if (cup1IsHidden || cup2IsHidden == false)
+                if (cup1IsHidden == false & cup2IsHidden == false)
                 {
                     picCup3.Hide();
+                    cup3IsHidden = true;
+                    lblGuessed.Show();
+                    lblGuessed.Text = "You Lose!";
+                    lblGuessed.Location = new Point(220, 80);
                 }
                 else
                 {
                     lblGuessed.Show();
+                    lblGuessed.Text = "You Already Guessed!";
+                    lblGuessed.Location = new Point(130, 185);
                 }
 
             }
             else if (ballLocation == 2)
             {
                 picBall.Location = new Point(267, 157);
-                if (cup1IsHidden || cup2IsHidden == false)
+                if (cup1IsHidden == false & cup2IsHidden == false)
                 {
                     picCup3.Hide();
+                    cup3IsHidden = true;
+                    lblGuessed.Show();
+                    lblGuessed.Text = "You Win!";
+                    lblGuessed.Location = new Point(220, 80);
                 }
                 else
                 {
                     lblGuessed.Show();
+                    lblGuessed.Text = "You Already Guessed!";
+                    lblGuessed.Location = new Point(130, 185);
                 }
 
             }
             else if (ballLocation == 3)
             {
                 picBall.Location = new Point(505, 157);
-                if (cup1IsHidden || cup2IsHidden == false)
+                if (cup1IsHidden == false & cup2IsHidden == false)
                 {
                     picCup3.Hide();
+                    cup3IsHidden = true;
+                    lblGuessed.Show();
+                    lblGuessed.Text = "You Lose!";
+                    lblGuessed.Location = new Point(220, 80);
                 }
                 else
                 {
                     lblGuessed.Show();
+                    lblGuessed.Text = "You Already Guessed!";
+                    lblGuessed.Location = new Point(130, 185);
                 }
 
             }
@@ -127,38 +163,56 @@ namespace GuessingGameJohnathanM
             if (ballLocation == 1)
             {
                 picBall.Location = new Point(25, 157);
-                if (cup1IsHidden || cup3IsHidden == false)
+                if (cup1IsHidden == false & cup3IsHidden == false)
                 {
                     picCup2.Hide();
+                    cup2IsHidden = true;
+                    lblGuessed.Show();
+                    lblGuessed.Text = "You Lose!";
+                    lblGuessed.Location = new Point(220, 80);
                 }
                 else
                 {
                     lblGuessed.Show();
+                    lblGuessed.Text = "You Already Guessed!";
+                    lblGuessed.Location = new Point(130, 185);
                 }
 
             }
             else if (ballLocation == 2)
             {
                 picBall.Location = new Point(267, 157);
-                if (cup1IsHidden || cup3IsHidden == false)
+                if (cup1IsHidden == false & cup3IsHidden == false)
                 {
                     picCup2.Hide();
+                    cup2IsHidden = true;
+                    lblGuessed.Show();
+                    lblGuessed.Text = "You Lose!";
+                    lblGuessed.Location = new Point(220, 80);
                 }
                 else
                 {
                     lblGuessed.Show();
+                    lblGuessed.Text = "You Already Guessed!";
+                    lblGuessed.Location = new Point(130, 185);
                 }
             }
             else if (ballLocation == 3)
             {
                 picBall.Location = new Point(505, 157);
-                if (cup1IsHidden || cup3IsHidden == false)
+                if (cup1IsHidden == false & cup3IsHidden == false)
                 {
                     picCup2.Hide();
+                    cup2IsHidden = true;
+                    lblGuessed.Show();
+                    lblGuessed.Text = "You Win!";
+                    lblGuessed.Location = new Point(220, 80);
                 }
                 else
                 {
                     lblGuessed.Show();
+                    lblGuessed.Text = "You Already Guessed!";
+                    lblGuessed.Location = new Point(130, 185);
                 }
             }
         }
