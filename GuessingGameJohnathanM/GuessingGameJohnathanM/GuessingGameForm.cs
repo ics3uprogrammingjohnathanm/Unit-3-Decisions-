@@ -8,6 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+/*
+ * Created by: Johnathan Meloche
+ * Created on: 28/02/19
+ * Created for: ICS3U Programming
+ * Daily Assignment – Day #16 - Guessing Game
+ * This program randomizes a golf balls location under a cup, you need to guess which cup it is under (with a restart button)
+*/
 namespace GuessingGameJohnathanM
 {
     public partial class frmGuessingGame : Form
@@ -17,6 +24,7 @@ namespace GuessingGameJohnathanM
             InitializeComponent();
            
         }
+        // Declaring variables and randomizer
         const int MIN_VALUE = 1;
         const int MAX_VALUE = 3;
         int ballLocation;
@@ -40,6 +48,7 @@ namespace GuessingGameJohnathanM
                 picBall.Location = new Point(25, 157);
                 if (cup3IsHidden == false & cup2IsHidden == false)
                 {
+                    //displays winning text for guessing correctly
                     picCup1.Hide();
                     cup1IsHidden = true;
                     lblGuessed.Show();
@@ -48,6 +57,7 @@ namespace GuessingGameJohnathanM
                 }
                 else
                 {
+                    //chnages you win or you lose text to you already guessed
                     lblGuessed.Show();
                     lblGuessed.Text = "You Already Guessed!";
                     lblGuessed.Location = new Point(130, 185);
@@ -219,7 +229,8 @@ namespace GuessingGameJohnathanM
 
         private void btnStart_Click(object sender, EventArgs e)
         {
-            ballLocation = ballLocationGenerator.Next(MIN_VALUE, MAX_VALUE);
+            //calls the randomizer to set a random location for the ball
+            ballLocation = ballLocationGenerator.Next(MIN_VALUE, MAX_VALUE+1);
             btnStart.Hide();
         }
 
@@ -230,6 +241,7 @@ namespace GuessingGameJohnathanM
 
         private void btnRestart_Click(object sender, EventArgs e)
         {
+            //restarts application on button click
             Application.Restart();
         }
     }
