@@ -10,10 +10,11 @@ using System.Windows.Forms;
 
 /*
  * Created by: Johnathan Meloche
- * Created on: 28/02/19
+ * Created on: 01/03/19
  * Created for: ICS3U Programming
- * Daily Assignment – Day #16 - Guessing Game
- * This program randomizes a golf balls location under a cup, you need to guess which cup it is under (with a restart button)
+ * Daily Assignment – Day #17 - Random Number
+ * This program randomizes a number from 1 to 3 and sets the golf ball's location under the corresponding cup,
+ * you need to guess which cup it is under (with a restart button)
 */
 namespace GuessingGameJohnathanM
 {
