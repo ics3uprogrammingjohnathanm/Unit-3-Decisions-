@@ -8,6 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+/*
+ * Created by: Johnathan Meloche
+ * Created on: 03/06/19
+ * Created for: ICS3U Programming
+ * Daily Assignment – Day #18 Rock Paper Scissors
+ * This program chooses rock paper or scissors at random and compares your choice to the CPU's choice.
+*/
+
 namespace RckPprScssrsJohnathanM
 {
     public partial class frmRockPaperScissors : Form
